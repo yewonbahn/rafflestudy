@@ -17,7 +17,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications'
 import MoreIcon from '@material-ui/icons/MoreVert'
 import { StylesProvider } from '@material-ui/core/styles'
 import './Navbar.css'
-import logo from '../../../images/logo.jpg'
+import raffle from '../../../images/raffle.png'
 
 import { NFTStorage, File } from 'nft.storage'
 import { createRef } from 'react'
@@ -107,11 +107,12 @@ export const Navbar = ({ account, connectWallet }) => {
 
   return (
     <StylesProvider injectFirst>
-      <div className="grow">
-        <AppBar position="static">
+      <div className="grow" >
+        <AppBar position="static"  className="grow2" >
+           <img src={raffle} alt="logo" className="logo" />
           <Toolbar>
             <Link to="/" className="whiteLink">
-              <img src={logo} alt="logo" className="logo" />
+           
             </Link>
             <Link to="/" className="whiteLink">
               <Typography className="title" variant="h6" noWrap>

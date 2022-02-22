@@ -15,7 +15,7 @@ function Footer() {
   return (
     <StylesProvider injectFirst>
       <footer>
-        <AppBar className="primary-color marginT-3 pad-2" position="static">
+        <AppBar className="primary-color marginT-3 pad-3" position="static">
           <Grid component={Container} container>
             <Grid item xs={12} sm={3}>
               <img src={logo} alt="logo" className="footer-logo" />

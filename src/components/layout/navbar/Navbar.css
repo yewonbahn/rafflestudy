@@ -1,9 +1,13 @@
 .grow {
     flex-grow: 1;
+    background-color: rgb(19, 12, 2);
+}.grow2{
+
+    background-color: rgb(19, 12, 2);
 }
 
 .whiteLink {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     text-decoration: none;
     font-weight: 400;
@@ -16,9 +20,7 @@
 }
 
 .logo {
-    width: 4rem;
-    border-radius: 50%;
-    padding: 5px;
+   
 }
 
 .title {
@@ -33,7 +35,7 @@
 .search {
     position: 'relative';
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(124, 82, 82);
 }
 
 .search:hover {

@@ -29,6 +29,8 @@ function CreatePet() {
   const [petType, setPetType] = useState('')
 
   const handleImage = (event) => {
+
+    console.log(event.target.files);
     setImage(event.target.files[0])
     setImageName(event.target.files[0].name)
     setImageType(event.target.files[0].type)
@@ -36,13 +38,16 @@ function CreatePet() {
 
   const handleSubmit = async (event) => {event.preventDefault()
     try {
+
       setLoading(true)
+      console.log(image);
       const client = new NFTStorage({ token: apiKey })
       const metadata = await client.store({
         name: petName,
         description: `${ownerName}, ${petType}`,
         image: new File([image], imageName, { type: imageType }),
       })
+      console.log(metadata)
       if (metadata) {
         history.push('/')
       }

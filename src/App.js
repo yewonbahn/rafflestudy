@@ -65,7 +65,7 @@ function App() {
           <PetDetails account={account} contractData={contractData} />
           </Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   )
